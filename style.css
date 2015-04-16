@@ -4,3 +4,9 @@ header
  {
    font-size: 1em;   /*feel free to change */
  }
+
+.index-columns{
+ width:100%;
+ margin-left: auto;
+ margin-right: auto;
+}
