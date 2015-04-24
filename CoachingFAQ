@@ -1,52 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
     <title>About Coaching</title>
-    <link href=
-    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-    rel="stylesheet">
-    <link href=
-    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
-    rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- Custom CSS -->
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <div class="navbar navbar-default navbar-static-top">
         <div class="navbar-header">
-            <button class="navbar-toggle" data-target=".navbar-collapse"
-            data-toggle="collapse" type="button"><span class="sr-only">Toggle
-            Navigation</span> <span class="icon-bar"></span> <span class=
-            "icon-bar"></span> <span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="index.html">Csilla Von Csiky</a>
+            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle
+            Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.html">Csilla Von Csiky</a>
         </div>
-
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
-                <li class="active">
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="pages/about.html">About Csilla</a>
-                </li>
-
-                <li>
-                    <a href="pages/services.html">Services</a>
-                </li>
-
-                <li>
-                    <a href="pages/testimonials.html">Testimonials</a>
-                </li>
-
-                <li>
-                    <a href="pages/contact.html">Contact</a>
-                </li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About Csilla</a></li>
+                <li><a href="pages/services.html">Services</a></li>
+                <li><a href="pages/coachingfaq.html">Coaching FAQ</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -168,30 +144,33 @@
         </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-1.5">
-                    <!--White Space-->
-                </div>
-
+                <div class="col-lg-1.5"><!--White Space--></div>
                 <div class="col-lg-5">
-                    <!--Social media + appointment button-->
-                </div>
-
+                <!--Social media + appointment button-->
+				<a class="btn btn-md btn-success fp-buttons" href="pages/contact.html">Contact</a>
+				</div>
                 <div class="col-lg-3">
-                    <!--Links to all pages-->
-                </div>
-
-                <div class="col-lg-1">
-                    <!--Return to top button-->
-                </div>
-
-                <div class="col-lg-1.5">
-                    <!--White Space-->
-                </div>
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="pages/about.html">About Csilla</a></li>
+						<li><a href="pages/services.html">Services</a></li>
+						<li><a href="pages/coachingfaq.html">Coaching FAQ</a></li>
+						<li><a href="pages/contact.html">Contact</a></li>
+					</ul>
+				</div>
+                <div class="col-lg-1"><!--Return to top button-->
+				    <ul class="nav pull-right scroll-top">
+						<li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+					</ul>
+				</div>
+                <div class="col-lg-1.5"><!--White Space--></div>
             </div>
         </div>
+    </div>
+        
     </div><script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <script src="js/bootstrap.min.js"></script> <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> <!-- Latest compiled and minified JavaScript -->
      <script src=
