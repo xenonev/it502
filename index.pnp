@@ -1,0 +1,76 @@
+<?php
+IF(!array_key_exists('name', $_REQUEST) )
+{
+    include('contact.html');
+}else
+   {
+   $name = $_REQUEST['name'];
+   $email = $_REQUEST['email'];
+   $job = $_REQUEST['job'];
+   $organization = $_REQUEST['organization'];
+   $message = $_REQUEST['message'];
+       $message = "job: ".$job."\r\n Organization: ".$organization."\r\n Message: ".$message ;
+    $errorMessage =    "" ;
+    $from = ' Contact Form';
+   $to = 'travisnevins2010@gmail.com'; //voncsiky@gmail.com
+   $subject = 'Website contact ';
+   $body = "'From: '.$name. '\r\n Email: ' .$email. '\r\n  Message: '.$message";
+   
+   
+   If(valid($name) == true && evalid($email) == truee && valid($job) == true && valid($organization) == true && valid($message) == true)
+   {
+    mail($to, $subject, $body, $from);
+    echo '<div class="alert alert-success">Thank You! I will be in touch</div>';
+   }elseif(valid($name) == false )
+        {
+        $errorMessage .= "<li>name is not valid! it must not be empty!</li>";
+         }elseif(evalid($email) == false )
+           {
+               $errorMessage .= "<li>Email is not valid! either not valid or empty!</li>";
+            }elseif( valid($message) == false)
+                 {
+              $errorMessage .= "<li>Message is not valid! It must be filled!</li>";
+
+             }elseif(valid($job) == false)
+               {
+                $errorMessage .= "<li>Job must be filled!!!</li>";
+               }elseif(valid($organization) == false)
+                 {
+                   $errorMessage .= "<li>Organization must be filled!</li>";
+                }elseif(valid($name) == false && valid($message) == false && evalid($email) == false && valid($job) == false && valid($organization) == false
+)        
+              {
+       
+             $errorMessage .= "<li>name,email,message,orginization, and job descriptoin are not valid!</li>";
+         }//add if to handle if link to guestbook is clicked!!!!!!!! 
+if(!empty($errorMessage)) 
+      {
+        echo "<div ><p>There was an error with your form:</p>\n" ;
+       echo "<ul>" .$errorMessage. "</ul></div>\r\n" ;
+     }else
+        {
+         echo"<div><p>Thank you for signing! :)</p></div>\n" ;       
+        }
+   }
+  function valid($str)
+  {   $str = htmlspecialchars($str);
+ if(ctype_space($str) == false && empty($str) != true)
+ {
+return true ;
+ }
+
+ return false ;
+    }
+   
+      function evalid($str)
+       {
+            $str = htmlspecialchars($str);
+     if(strpos($str,'@')  != false && ctype_space($str) == false && empty($str) != true)
+      {
+    return true;
+      }
+       return false; 
+     }//end 
+     
+    
+?>
