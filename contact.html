@@ -2,16 +2,35 @@
 <html lang="en">
   <head>
    <title>form</title>
- <head>
         <meta charset="utf-8">
-        <title>Cogent Coaching</title>
+        <title>Contact</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Custom CSS -->
     	<link rel="stylesheet" type="text/css" href="stylesheet.css"> 
     </head>
     <body>
+	  <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Csilla Von Csiky</a>
+            </div>
+            <div class ="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About Csilla</a></li>
+                    <li><a href="../pages/services.html">Services</a></li>
+                    <li><a href="../pages/aboutcoaching.html">Coaching FAQ</a></li>
+                    <li class="active"><a href="contact/">Contact</a></li>
+                </ul>
+            </div>
+    </div>
     <h1>Contact</h1>
     <form class="form-horizontal" role="form" method="post" action=" ">
 	<div class="form-group">
@@ -31,7 +50,7 @@
     <div class="form-group">
 		<label for="organization" class="col-sm-2 control-label">Organization</label>
 
-		<div class="col-sm-10">''
+		<div class="col-sm-10">
 			<input type="text" class="form-control" id="organization" name="organization" placeholder="Orginaztion Name" value="">
 		</div>
 	</div><br />
@@ -55,6 +74,33 @@
 			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
 		</div>
 	</div>
+	<div class="jumbotron footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1.5"><!--White Space--></div>
+                <div class="col-lg-5">
+                <!--Social media + appointment button-->
+				<a class="btn btn-md btn-success fp-buttons" href="pages/contact.html">Contact</a>
+				</div>
+                <div class="col-lg-3">
+				  <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About Csilla</a></li>
+                    <li><a href="../pages/services.html">Services</a></li>
+                    <li><a href="../pages/aboutcoaching.html">Coaching FAQ</a></li>
+                    <li class="active"><a href="contact/">Contact</a></li>
+				  </ul>
+				</div>
+                <div class="col-lg-1"><!--Return to top button-->
+				    <ul class="nav pull-right scroll-top">
+						<li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+					</ul>
+				</div>
+                <div class="col-lg-1.5"><!--White Space--></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://a
 	
 </form>
 </body>
