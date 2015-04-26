@@ -6,14 +6,13 @@ header
  }
 
 .index-columns {
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid red;
+	padding-bottom: 15px;
 }
 
 .jumbotron {
-	margin-top: 15px;
 }
 
 /*START NAVBAR CSS*/
