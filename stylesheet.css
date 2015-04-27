@@ -77,3 +77,9 @@ header
     }
 }
 /*END NAVBAR*/
+/*contact h1 css contact should inherriate anything else*/
+.contact-head /* h1 class*/
+{
+  margin: 30px;	
+ 
+}
