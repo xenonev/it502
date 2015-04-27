@@ -8,6 +8,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- Custom CSS -->
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="navbar.css"> 
 </head>
 <body>
     <div class="navbar navbar-default navbar-static-top">
