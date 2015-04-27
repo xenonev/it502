@@ -1,0 +1,30 @@
+/*START NAVBAR CSS*/
+/* navbar */
+.navbar-default {
+    background: #A3E0FF; 
+    border-color: #A3E0FF;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #0000FF; /*Color of title */
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #0000FF; /*Nothing*/
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #000000; /*Text of Link */
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #00FF00; /*Highlighted link text color*/
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #0000FF; /*Actuve page text color*/
+    background: #00FF00; /*Background of active*/
+}
+
+/* End nav bar
