@@ -56,6 +56,38 @@ header
 	right: 0;
 	left: 0;
 }
+/*START NAVBAR CSS*/
+/* navbar */
+.navbar-default {
+    background: #ADD8FF;
+    border-color: #ADD8FF;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #9d3293; /*Color of title */
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #0000FF; /*Nothing*/
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #000080; /*Text of Link */
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #009100; /*Highlighted link text color*/
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #006400; /*Actuve page text color*/
+    background: #000080; /*Background of active*/
+    font-weight: 600;
+}
+
+/* End nav bar
+
 /* mobile version */
 .navbar-default .navbar-toggle {
     border-color: #DDD;
@@ -81,5 +113,4 @@ header
 .contact-head /* h1 class*/
 {
   margin: 30px;	
- 
 }
